@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "InstaUnfollow",
+  "version": "1.0.0",
+  "permissions": [ "tabs" ],
+  "browser_action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://instagram.com/*",
+        "https://*.instagram.com/*"
+      ],
+      "js": [ "content.js" ],
+      "run_at": "document_start"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 360px;
+    }
+    input {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  Before starting work, you need to clear user information
+  and redefine subscribers and subscriptions to update information<br>
+  <button id="deleteCache">Clear subscriber information</button>
+  <br><br>
+  <div>Found <span id="countFollowers"></span> subscribers</div>
+  <button id="detectFollowers">Determine subscribers</button>
+  <br><br>
+  <div id="info">Found <span id="countFollowings"></span> subscriptions</div>
+  <button id="detectFollowings">Determine subscriptions</button>
+  <br><br>
+  <div id="info">Found <span id="countDiff"></span> non-reciprocal</div>
+  Unsubscribe from <input type="number" id="input"> non-reciprocal
+  <button id="unfollow">Unsubscribe</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
